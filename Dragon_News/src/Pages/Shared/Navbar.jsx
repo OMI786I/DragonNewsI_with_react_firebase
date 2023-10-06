@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import user from "../../assets/user.png";
 const Navbar = () => {
   const navLinks = (
-    <>
+    <div>
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
@@ -12,7 +12,10 @@ const Navbar = () => {
       <li>
         <NavLink to="/career">Career</NavLink>
       </li>
-    </>
+      <li>
+        <NavLink to="/login">Login</NavLink>
+      </li>
+    </div>
   );
 
   return (
