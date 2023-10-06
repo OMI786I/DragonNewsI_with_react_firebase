@@ -4,8 +4,10 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
-    console.log(form.get("email"));
-    console.log(form.get("password"));
+
+    const email = form.get("email");
+    const password = form.get("password");
+    console.log(email, password);
     console.log(e.currentTarget);
   };
 
